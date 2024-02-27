@@ -16,4 +16,33 @@
 
 header{
     z-index: 10;
+    height: 60px;
+}
+
+aside{
+    background-image: url(img/sidebar-bg.png);
+    background-size: cover;
+    background-position: top;
+    width: 60px;
+    height: calc(100vh - 60px);
+    background-color: #051E34;
+}
+
+aside button:hover{
+    opacity: 70%;
+}
+
+@media screen and (min-width: 992px) {
+    aside{
+        width: 120px;
+    }
+
+    aside button i.fa-signal{
+        margin-right: -6px;
+    }
+
+    aside button i.fa-house{
+        margin-right: -5px;
+    }
+    
 }
