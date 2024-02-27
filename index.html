@@ -12,16 +12,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="ms-logo col-auto">
-                <img class="img-fluid" src="img/mobile-logo.png" alt="Logo">
+    <header class="sticky-top py-2">
+        <div class="container-fluid d-flex align-items-center">
+            <div class="col-auto">
+                <img class="ms-logo img-fluid d-lg-none" src="img/mobile-logo.png" alt="Logo">
+                <img class="ms-lg-logo img-fluid d-none d-lg-block " src="img/logo.svg" alt="Logo">
             </div>
-            <div class="search col">
-
+            <div class="search col d-flex mx-3">
+                <button type="submit" class="btn ms-bar-bg rounded-0 rounded-start px-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="form-control rounded-0 rounded-end ms-bar-bg ms-fs-14" type="search" placeholder="Prova a cercare: lezioni di Laravel">
             </div>
-            <div class="notification col-auto">
-                
+            <div class="notification col-auto d-flex align-items-center">
+                <div class="d-none d-lg-block d-flex me-3">
+                    <i class="mx-1 text-secondary fa-solid fa-list"></i>
+                    <i class="mx-3 text-secondary fa-solid fa-circle-question"></i>
+                    <i class="mx-1 text-secondary fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <i class="text-warning fa-solid fa-bell"></i>
             </div>
         </div>
     </header>
