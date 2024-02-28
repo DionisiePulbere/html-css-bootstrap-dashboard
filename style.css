@@ -62,6 +62,15 @@ aside button:hover{
     background-color: #165BBA;
 }
 
+table img{
+    width: 40px;
+}
+
+table button:hover{
+    background-color: gray !important;
+    color: white !important;
+}
+
 /*--------------------------- 
     RESPONSIVE
 ---------------------------*/
