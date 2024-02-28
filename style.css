@@ -1,3 +1,22 @@
+/*--------------------------- 
+    CONTAINER
+---------------------------*/
+.ms-container-vh{
+    height: calc(100vh - 60px);
+}
+
+.container-main{
+    width: calc(100% - 60px);
+}
+
+/*--------------------------- 
+    HEADER
+---------------------------*/
+header{
+    z-index: 10;
+    height: 60px;
+}
+
 .ms-logo{
     width: 50px;
 }
@@ -10,15 +29,18 @@
     background-color: #E5E5E5;
 }
 
+.ms-form-control:focus{
+    border: none;
+    box-shadow: none;
+}
+
 .ms-fs-14{
     font-size: 14px;
 }
 
-header{
-    z-index: 10;
-    height: 60px;
-}
-
+/*--------------------------- 
+    MAIN
+---------------------------*/
 aside{
     background-image: url(img/sidebar-bg.png);
     background-size: cover;
@@ -32,6 +54,17 @@ aside button:hover{
     opacity: 70%;
 }
 
+.ms-dropdown-toggle::after {
+    display: none;
+}
+
+.ms-bg-darkblue{
+    background-color: #165BBA;
+}
+
+/*--------------------------- 
+    RESPONSIVE
+---------------------------*/
 @media screen and (min-width: 992px) {
     aside{
         width: 120px;
@@ -44,5 +77,8 @@ aside button:hover{
     aside button i.fa-house{
         margin-right: -5px;
     }
-    
+
+    .container-main{
+        width: calc(100% - 120px);
+    }
 }
