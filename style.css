@@ -81,4 +81,8 @@ aside button:hover{
     .container-main{
         width: calc(100% - 120px);
     }
+
+    .offcanvas{
+        width: calc(100vw / 2) !important;
+    }
 }
