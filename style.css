@@ -71,6 +71,11 @@ table button:hover{
     color: white !important;
 }
 
+.offcanvas{
+    width: calc(100vw) !important;
+}
+
+
 /*--------------------------- 
     RESPONSIVE
 ---------------------------*/
@@ -95,3 +100,4 @@ table button:hover{
         width: calc(100vw / 2) !important;
     }
 }
+
